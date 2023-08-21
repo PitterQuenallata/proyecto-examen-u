@@ -25,7 +25,7 @@
                                 <?php
                                 $item = null;
                                 $valor = null;
-                                $usuarios = ControladorPaquetes::ctrMostrarPaquetes($item, $valor);
+                                $usuarios = ControladorPostulantes::ctrMostrarPostulantes($item, $valor);
                                 foreach ($usuarios as $key => $value) {
 
                                     echo ' <tr>
@@ -68,8 +68,8 @@
                             </div>
                             <?php
 
-                            $crearCategoria = new ControladorPaquetes();
-                            $crearCategoria->ctrCrearPaquetes();
+                            $crearCategoria = new ControladorPostulantes();
+                            $crearCategoria->ctrCrearPostulantes();
 
                             ?>
                         </form>

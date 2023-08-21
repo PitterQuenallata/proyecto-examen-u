@@ -1,6 +1,6 @@
 <?php
 
-class ControladorPaquetes
+class ControladorPostulantes
 {
 
 
@@ -8,12 +8,12 @@ class ControladorPaquetes
 	MOSTRAR CATEGORIAS
 	=============================================*/
 
-    static public function ctrMostrarPaquetes($item, $valor)
+    static public function ctrMostrarPostulantes($item, $valor)
     {
 
         $tabla = "paquetes";
 
-        $respuesta = ModeloPaquetes::mdlMostrarPaquetes($tabla, $item, $valor);
+        $respuesta = ModeloPostulantes::mdlMostrarPostulantes($tabla, $item, $valor);
 
         return $respuesta;
     }
@@ -22,7 +22,7 @@ class ControladorPaquetes
 	CREAR CATEGORIAS
 	=============================================*/
 
-    static public function ctrCrearPaquetes()
+    static public function ctrCrearPostulantes()
     {
         // echo "fdsf";
         if (isset($_POST["nuevoPaquete"])) {
@@ -33,7 +33,7 @@ class ControladorPaquetes
 
                 $datos = $_POST["nuevoPaquete"];
 
-                $respuesta = ModeloPaquetes::mdlIngresarPaquetes($tabla, $datos);
+                $respuesta = ModeloPostulantes::mdlIngresarPostulantes($tabla, $datos);
 
                 if ($respuesta == "ok") {
 

@@ -2,13 +2,13 @@
 
 require_once "conexion.php";
 
-class ModeloPaquetes{
+class ModeloPostulantes{
 
     // /=============================================
     // MOSTRAR CATEGORIAS
     // =============================================/
 
-    static public function mdlMostrarPaquetes($tabla, $item, $valor){
+    static public function mdlMostrarPostulantes($tabla, $item, $valor){
 
         if($item != null){
                                                  //SELECT * FROM usuarios WHERE usuario='admin';
@@ -40,7 +40,7 @@ class ModeloPaquetes{
     // CREAR CATEGORIA
     // =============================================/
 
-    static public function mdlIngresarPaquetes($tabla, $datos){
+    static public function mdlIngresarPostulantes($tabla, $datos){
 
         $stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(paquete) VALUES (:paquete)");
 

@@ -19,13 +19,14 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <!-- Nucleo Icons -->
-  <link href="http://localhost/Proyecto-de-Grado-Ensec-main/public/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="public/css/nucleo-icons.css" rel="stylesheet" />
   <!-- CSS Files -->
-  <link href="http://localhost/Proyecto-de-Grado-Ensec-main/public/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="http://localhost/Proyecto-de-Grado-Ensec-main/public/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
+  <link href="public/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="public/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
 <!-- swit alert -->
-<script src="http://localhost/Proyecto-de-Grado-Ensec-main/public/js/plugins/sweetalert/sweetalert.min.js"></script>
-<script src="http://localhost/Proyecto-de-Grado-Ensec-main/public/js/plugins/sweetalert2/sweetalert2.all.js"></script>
+<script src="public/js/plugins/sweetalert/sweetalert.min.js"></script>
+<script src="public/js/plugins/sweetalert2/sweetalert2.all.js"></script>
+
 
 
 </head>
@@ -41,6 +42,7 @@ echo '<div class="main-panel ps">';
 include COMPONENTS_DIR . "/navbar.php";
 
 $ruta = $_GET['ruta'];
+
 if ($ruta === 'postulantes') {
 
   include COMPONENTS_DIR . "/postulantes.php";
@@ -55,20 +57,20 @@ echo '</div>';
 ?>
 
 <!--   Core JS Files //  simplificar la manipulación del DOM  -->
-<script src="http://localhost/Proyecto-de-Grado-Ensec-main/public/js/core/jquery.min.js"></script>
+<script src="public/js/core/jquery.min.js"></script>
 <!--   Core JS Files //  utilizada para gestionar el posicionamiento de elementos emergentes y desplegables.  -->
-<script src="http://localhost/Proyecto-de-Grado-Ensec-main/public/js/core/popper.min.js"></script>
-<script src="http://localhost/Proyecto-de-Grado-Ensec-main/public/js/core/bootstrap.min.js"></script>
+<script src="public/js/core/popper.min.js"></script>
+<script src="public/js/core/bootstrap.min.js"></script>
 <!-- Perfect Scrollbar, que mejora la funcionalidad de desplazamiento en contenedores. -->
-<script src="http://localhost/Proyecto-de-Grado-Ensec-main/public/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<script src="public/js/plugins/perfect-scrollbar.jquery.min.js"></script>
 <!--  Google Maps Plugin     -->
 <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
 <!-- Chart JS // crear gráficos y visualizaciones interactivas en la página. -->
-<script src="http://localhost/Proyecto-de-Grado-Ensec-main/public/js/plugins/chartjs.min.js"></script>
+<script src="public/js/plugins/chartjs.min.js"></script>
 <!--  Notifications Plugin // permite mostrar notificaciones emergentes   -->
-<script src="http://localhost/Proyecto-de-Grado-Ensec-main/public/js/plugins/bootstrap-notify.js"></script>
+<script src="public/js/plugins/bootstrap-notify.js"></script>
 <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
-<script src="http://localhost/Proyecto-de-Grado-Ensec-main/public/js/black-dashboard.min.js?v=1.0.0" type="text/javascript"></script>
+<script src="public/js/black-dashboard.min.js?v=1.0.0" type="text/javascript"></script>
 
 <script>
       $(document).ready(function() {
@@ -77,6 +79,7 @@ echo '</div>';
 
       });
     </script>
+    
 </body>
 
 
